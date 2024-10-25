@@ -19,6 +19,8 @@ const Home = () => {
 			case 'verde':
 				return 'rojo';
 				break;
+			case ' ':
+				return 'rojo';
 			default:
 				break;
 		}
