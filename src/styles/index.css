@@ -1,6 +1,6 @@
 
 /* 
-
+    
     You can write your own styles here...
     
     
@@ -10,3 +10,26 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.trafficTop{
+    width: 10px;
+    height: 100px;   
+}
+.base{
+    width: 100px; 
+    padding: 10px; 
+    background-color: black;
+    border-radius: 10px; 
+}
+.red{
+    width: 50px; 
+    height: 50px; 
+}
+.yellow{
+    width: 50px; 
+    height: 50px; 
+}
+.green{
+    width: 50px; 
+    height: 50px; 
+}
