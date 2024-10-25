@@ -7,6 +7,22 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 const Home = () => {
 	const [ color, setColor] = useState(" ");
+
+	const cambio = () =>{
+		switch (color) {
+			case 'rojo':
+				return 'amarillo';
+				break;
+			case 'amarillo':
+				return 'verde';
+				break;
+			case 'verde':
+				return 'rojo';
+				break;
+			default:
+				break;
+		}
+	}
 	
 	return (
 		<div className="container d-flex flex-column align-items-center justify-content-center">
@@ -16,7 +32,7 @@ const Home = () => {
 				<div onClick={()=>setColor('amarillo')}  className={`yellow light rounded-circle bg-warning my-2 ${color === 'amarillo' ? 'iluminado': ''}`}></div>
 				<div onClick={()=>setColor('verde')}  className={`green light rounded-circle bg-success my-2 ${color === 'verde' ? 'iluminado': ''}`}></div>
 			</div>
-			<button className="btn btn-success">Cambiar</button>
+			<button className="btn btn-success" onClick={()=>setColor(prev=>prev=cambio())}>Cambiar</button>
 		</div>
 	);
 };
